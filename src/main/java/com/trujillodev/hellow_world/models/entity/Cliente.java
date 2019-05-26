@@ -16,15 +16,17 @@ import javax.persistence.TemporalType;
 @Table(name = "clientes")
 public class Cliente implements Serializable {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
 	// Solo para especificar propiedades
 	@Column(name = "nombre")
 	private String nombre;
+
+	private String apellido;
 	
 	private String email;
-	
+
 	@Column(name = "create_at")
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
@@ -43,6 +45,14 @@ public class Cliente implements Serializable {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
 	}
 
 	public String getEmail() {
