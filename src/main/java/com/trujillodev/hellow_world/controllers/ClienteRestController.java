@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.trujillodev.hellow_world.models.entity.Cliente;
 import com.trujillodev.hellow_world.models.services.IClienteService;
 
-@CrossOrigin(origins = {
+@CrossOrigin( origins = {
 		"http://localhost:4200"
 })
 @RestController
