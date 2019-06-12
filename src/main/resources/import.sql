@@ -13,3 +13,6 @@ INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Tornado', 'Roe
 INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Jade', 'Doe', 'jane.doe@gmail.com', '2018-03-06');
 
 INSERT INTO productos (skuid, descripcion, precio, stock) VALUES ('001', 'Tasa', 10, 5);
+
+
+CREATE TABLE usuarios ( idUsuario int(11) NOT NULL AUTO_INCREMENT,  nombre varchar(50) NOT NULL,  telefono varchar(15) NOT NULL,  email varchar(50) NOT NULL,  PRIMARY KEY (idUsuario) ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
